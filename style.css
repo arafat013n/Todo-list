@@ -1,0 +1,86 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+}
+
+.main {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   background: linear-gradient(145deg, #1BB1E9, #1BE97A);
+   padding: 10px;
+   margin-bottom: 50px;
+   min-height: 388px;
+   max-height: 388px;
+   overflow: scroll;
+   border-radius: 10px;
+   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+   border: 0.1px solid #e0e0e0;
+}
+
+.main h1 {
+   text-transform: capitalize;
+   text-align: center;
+   padding-bottom: 30px;
+}
+
+.main .box {
+   height: 30px;
+   margin-bottom: 20px;
+}
+
+.main input {
+   height: 100%;
+   margin-right: 10px;
+   padding-left: 10px;
+   outline: none;
+}
+
+.main #btn {
+   height: 100%;
+   padding: 0 10px;
+}
+
+button {
+   outline: none;
+   border: none;
+   user-select: none;
+   transition: 0.3s;
+}
+
+button:hover {
+   background: cyan;
+   transform: scale(1.05);
+}
+
+.main .item {
+   display: flex;
+   justify-content: space-between;
+   background: #e0e0e0;
+   margin-bottom: 6px;
+   padding: 6px;
+   max-width: 260px;
+}
+
+.main ul .item li {
+   list-style: none;
+   font-weight: 900;
+   font-size: 20px;
+}
+
+.main ul .item button {
+   padding: 0 6px;
+   border: none;
+   border-left: 1px solid;
+   text-transform: capitalize;
+   font-weight: 500;
+}
